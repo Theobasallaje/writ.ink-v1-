@@ -1,3 +1,20 @@
 body {
-    text-align: center;
+    /* text-align: center; */
+}
+
+/* #poem {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    background: gray;
+} */
+.poem {
+    display: flex;
+    justify-content: center;
+    width: 35vw;
+    background: #d6cbcb;
+}
+
+.container {
+    /* width: 35vw; */
 }
