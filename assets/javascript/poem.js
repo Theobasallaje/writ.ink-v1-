@@ -4,9 +4,10 @@ var poemArray = [
 
 // var poem = document.getElementById("poem");
 // var poem2 = document.getElementsByClassName("poem2");
-var poem = document.querySelectorAll(".poem");
+var poem = document.querySelectorAll(".poemText");
+var title = document.querySelectorAll(".title");
 // poem.textContent = poemArray[0];
 for (i = 0; i < poem.length; i++) {
-    poem[i].textContent = "title: " + poemArray[0];
+    title[i].textContent = "Title";
+    poem[i].textContent = poemArray[0];
 }
-

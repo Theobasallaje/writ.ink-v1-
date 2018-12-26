@@ -1,7 +1,7 @@
 body {
     /* text-align: center; */
     background: url("../images/bananas.png");
-    font-family: 'Charm', cursive;
+    font-family: 'Inconsolata', monospace;
 }
 
 /* #poem {
@@ -11,13 +11,18 @@ body {
     background: gray;
 } */
 .poem {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     width: 35vw;
     background: url("../images/folk-pattern-black.png");
     color: white;
     border-radius: 25px;
     padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poemText{
+    color: white;
 }
 
 .container {
