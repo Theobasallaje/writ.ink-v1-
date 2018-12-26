@@ -1,5 +1,6 @@
 body {
     /* text-align: center; */
+    background: url("../images/bananas.png");
 }
 
 /* #poem {
@@ -12,7 +13,8 @@ body {
     display: flex;
     justify-content: center;
     width: 35vw;
-    background: #d6cbcb;
+    background: url("../images/folk-pattern-black.png");
+    color: white;
 }
 
 .container {
