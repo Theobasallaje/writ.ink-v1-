@@ -13,7 +13,7 @@ body {
 .poem {
     /* display: flex;
     justify-content: center; */
-    width: 35vw;
+    /* width: 35vw; */
     background: url("../images/folk-pattern-black.png");
     color: white;
     border-radius: 25px;
