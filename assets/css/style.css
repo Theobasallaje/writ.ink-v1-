@@ -19,6 +19,7 @@ body {
     border-radius: 25px;
     padding: 25px;
     font-family: 'Montserrat', sans-serif;
+    z-index: 0;
 }
 
 .poemText{
@@ -27,4 +28,22 @@ body {
 
 .container {
     /* width: 35vw; */
+}
+
+#back{
+    font-size: 2em;
+    margin-right: 15px;
+    color: white;
+    z-index: 1;
+}
+
+#logo{
+    /* color: rgba(212, 199, 6, 0.692); */
+    font-size: 2.5em;
+    margin-right: 10px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
 }

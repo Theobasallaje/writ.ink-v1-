@@ -1,6 +1,6 @@
 //onjects 
 var poem = {
-    
+
 }
 //arrays
 var poemArray = [
@@ -12,24 +12,40 @@ var poemText = document.querySelectorAll(".poemText");
 var title = document.querySelectorAll(".title");
 var poemCard = $(".poem");
 var poemView = $("#poemView");
+// var back = $("#back");
 
 //function calls
 displayPoems();
 
 //functions 
 function displayPoems(){
-    for (i = 0; i < poemText.length; i++) {
-        title[i].textContent = "Title";
-        poemText[i].textContent = poemArray[0];
+    for (i = 0; i < $(".poemText").length; i++) {
+        $(".title")[i].textContent = "Title " + i;
+        $(".poemText")[i].textContent = poemArray[0];
     }
 }
 
-poemCard.click(function(){
-    poemView.html(`<div class="poem">
-                   <h1 class="title"></h1>
-                   <div class="poemText"></div>
-                   </div>`);
+$(document).ready(function() {
+    poemCard.click(function(){
+        poemView.html(`<br><div class="poem">
+                       <i id="back" class="fas fa-chevron-left"></i>
+                       <h1 class="title">Title</h1>
+                       <div class="poemText">${poemArray[0]}</div>
+                       </div>`);
+    });
+
+    // $("#back").click(function(){
+    //     // location.reload();
+    //     alert("back clicked");
+    // });
+
+    $(document).on('click', '#back', function() { 
+        // alert("hello");
+        location.reload();
+    });
 });
+
+
 
 
 
