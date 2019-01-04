@@ -1,9 +1,22 @@
+html, body{
+    min-height: 100vh;
+}
+
 body {
     /* text-align: center; */
     background: url("../images/background_red_black.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Inconsolata', monospace;
+    /* border: 2px solid red; */
+}
+
+/* html{
+    border: 2px solid black;
+}
+
+.container{
+    border: 2px solid green; */
 }
 
 /* #poem {
