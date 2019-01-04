@@ -1,6 +1,8 @@
 body {
     /* text-align: center; */
-    background: url("../images/bananas.png");
+    background: url("../images/background_red_black.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -22,6 +24,10 @@ body {
     z-index: 0;
 }
 
+h4{
+    margin-bottom: 0px;
+}
+
 .poemText{
     color: white;
 }
@@ -38,12 +44,34 @@ body {
 }
 
 #logo{
-    /* color: rgba(212, 199, 6, 0.692); */
+    color: white;
     font-size: 2.5em;
     margin-right: 10px;
+}
+
+.navbar{
+    background-color: black;
 }
 
 .navbar-brand{
     display: flex;
     align-items: center;
+    color: white;
+}
+
+.sidebar-box {
+    max-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+.sidebar-box .fadeOut { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 0; padding: 30px 0; 
+      
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, black);
 }
