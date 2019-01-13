@@ -12,6 +12,9 @@ var poemText = document.querySelectorAll(".poemText");
 var title = document.querySelectorAll(".title");
 var poemCard = $(".poem");
 var poemView = $("#poemView");
+var navLink = $(".nav-link");
+// var toolbar = $(".toolbar");
+var editor = $("#editorDiv");
 // var back = $("#back");
 
 //function calls
@@ -26,9 +29,16 @@ function displayPoems(){
 }
 
 $(document).ready(function() {
+    // toolbar.css("disply", none);
+    editor.hide();
+    // <!-- Initialize Quill editor -->
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+
     poemCard.click(function(){
         poemView.html(`<br><div class="poem">
-                       <i id="back" class="fas fa-chevron-left"></i>
+                       <i id="back" class="fas fa-chevron-circle-left"></i>
                        <h1 class="title">Title</h1>
                        <div class="poemText">${poemArray[0]}</div>
                        </div>`);
@@ -42,6 +52,17 @@ $(document).ready(function() {
     $(document).on('click', '#back', function() { 
         // alert("hello");
         location.reload();
+    });
+
+    navLink.on("click", function(){
+        // toolbar.css("disply", initial);
+        editor.show();
+        // poemView.html(`<br><br><div id="editor">
+        //               <i id="back" class="fas fa-chevron-circle-left"></i>
+        //               <p>Hello World!</p>
+        //               <p>Some initial <strong>bold</strong> text</p>
+        //               <p><br></p>
+	    //               </div>`);
     });
 });
 
